@@ -1,0 +1,91 @@
+﻿@model CRUD.Models.Coder
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Coder</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.batch_name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.batch_name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.patient_name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.patient_name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.pagennumber)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.pagennumber)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DOS)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DOS)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CPT)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CPT)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.modifier)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.modifier)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ICD_10)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ICD_10)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.comments)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.comments)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.coder1)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.coder1)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
